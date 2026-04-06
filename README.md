@@ -181,6 +181,4 @@ The entire workflow is wrapped in a **Try-Catch-Finally** block:
 
 ---
 
-## Author
 
-Built by Shruti Guna as part of RFP automation tasks.
