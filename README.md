@@ -98,6 +98,35 @@ A UiPath RPA bot that reads a PDF invoice, extracts all key fields and line item
 | 5 | UI/UX Design Services | 998311 | 8 | 8,500 | 68,000 | 18% |
 | 6 | Technical Documentation & Training | 998312 | 2 | 12,500 | 25,000 | 18% |
 
+
+---
+
+## Regex Patterns Used
+
+| Field | Pattern |
+|---|---|
+| Invoice Number | `(?<=Invoice No\.\s*)INV-[\d\-]+` |
+| Invoice Date | `(?<=Invoice Date\s*)\d{1,2}\s+\w+\s+\d{4}` |
+| Due Date | `(?<=Due Date\s*)\d{1,2}\s+\w+\s+\d{4}` |
+| PO Reference | `(?<=PO Reference\s*)PO-[\w\-]+` |
+| Payment Terms | `(?<=Payment Terms\s*)Net\s+\d+\s+Days` |
+| Currency | `(?<=Currency\s*).+` |
+| Vendor GST | `(?<=GST:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}` |
+| Client Name | `(?<=BILL TO.*\n)[\w\s]+Ltd\.` |
+| Client GST | `(?<=GSTIN:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}` |
+| Sub Total | `(?<=Sub Total\s*n)[\d,]+` |
+| CGST | `(?<=CGST @ 9%\s*n)[\d,]+` |
+| SGST | `(?<=SGST @ 9%\s*n)[\d,]+` |
+| Gross Total | `(?<=Gross Total\s*n)[\d,]+` |
+| TDS | `(?<=TDS Deduction @ 2%\s*\(n)[\d,]+` |
+| Net Payable | `(?<=NET PAYABLE\s*n)[\d,]+` |
+| Bank Name | `(?<=Bank:\s*).+?(?=\s*\|)` |
+| Account No | `(?<=Account No\.:\s*)\d+` |
+| IFSC Code | `(?<=IFSC:\s*)[A-Z0-9]+` |
+| Line Items | `(\d)\s+(.+?)\s+(9983\d{2})\s+(\d+)\s+([\d,]+)\s+([\d,]+)\s+(\d+%)` |
+
+Note: The rupee symbol appears as `n` in the extracted PDF text.
+
 ---
 
 
