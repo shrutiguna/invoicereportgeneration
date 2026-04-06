@@ -1,0 +1,6 @@
+{
+  "Name": "InvoiceReport",
+  "ProjectType": "Process",
+  "Description": "Extracts invoice\r\n",
+  "MainFile": "Main.xaml"
+}

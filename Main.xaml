@@ -1,0 +1,290 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1176.6666666666665,10911.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="invoiceData" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="invoice" />
+      <Variable x:TypeArguments="x:String" Name="pdfText" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="invNo" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="invDate" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="dueDate" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="poRef" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="payTerms" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="currency" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="vendorGST" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="clientName" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="clientGST" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="subTotal" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="cgstAmt" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="sgstAmt" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="grossTotal" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="tdsAmt" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="netPayable" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="bankName" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ifscCode" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="accNo" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtHeader" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtLineItems" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="lineItems" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="vendorName" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="vendorAddr" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="clientAddr" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="strPayStatus" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;===== Invoice Extraction Bot Started =====&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="538,10712" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="536,9792" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="sample_invoice.pdf" sap:VirtualizedContainerService.HintSize="502,116" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" Text="[pdfText]" />
+          <ui:WriteTextFile FileName="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" File="[LocalResource.FromPath(&quot;invoiceData.txt&quot;)]" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[pdfText]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;PDF text extracted successfully. Length: &quot; + pdfText.Length.ToString + &quot; characters&quot;]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Invoice No\.\s*)INV-[\d\-]+" DisplayName="Invoice Number" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_26" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Invoice No\\.\\s*)INV-[\\d\\-]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Invoice No\.\s*)INV-[\d\-]+" RegexOption="IgnoreCase, Compiled" Result="[invNo]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Invoice Date\s*)\d{1,2}\s+\w+\s+\d{4}" DisplayName="Invoice Date" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_27" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Invoice Date\\s*)\\d{1,2}\\s+\\w+\\s+\\d{4}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Invoice Date\s*)\d{1,2}\s+\w+\s+\d{4}" RegexOption="IgnoreCase, Compiled" Result="[invDate]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Due Date\s*)\d{1,2}\s+\w+\s+\d{4}" DisplayName="Due Date" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_28" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Due Date\\s*)\\d{1,2}\\s+\\w+\\s+\\d{4}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Due Date\s*)\d{1,2}\s+\w+\s+\d{4}" RegexOption="IgnoreCase, Compiled" Result="[dueDate]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=PO Reference\s*)PO-[\w\-]+" DisplayName="PO Reference" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_29" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=PO Reference\\s*)PO-[\\w\\-]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=PO Reference\s*)PO-[\w\-]+" RegexOption="IgnoreCase, Compiled" Result="[poRef]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Payment Terms\s*)Net\s+\d+\s+Days" DisplayName="Payment Terms" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_30" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Payment Terms\\s*)Net\\s+\\d+\\s+Days&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Payment Terms\s*)Net\s+\d+\s+Days" RegexOption="IgnoreCase, Compiled" Result="[payTerms]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Currency\s*).+" DisplayName=" Currency" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_31" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Currency\\s*).+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Currency\s*).+" RegexOption="IgnoreCase, Compiled" Result="[currency]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="^.+(?=\n)" DisplayName="Vendor Name" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_32" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;^.+(?=\\n)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="^.+(?=\n)" RegexOption="IgnoreCase, Compiled" Result="[vendorName]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=#)([\s\S]*?)(?=BILL TO)" DisplayName="Vendor Address" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_33" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=#)([\\s\\S]*?)(?=BILL TO)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=#)([\s\S]*?)(?=BILL TO)" RegexOption="IgnoreCase, Compiled" Result="[vendorAddr]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=GST:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}" DisplayName="Vendor GST" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_34" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=GST:\\s*)\\d{2}[A-Z]{5}\\d{4}[A-Z]\\d[A-Z]{2}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=GST:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}" RegexOption="IgnoreCase, Compiled" Result="[vendorGST]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=BILL TO.*\n)[\w\s]+Ltd\." DisplayName="Client Name" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_35" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=BILL TO.*\\n)[\\w\\s]+Ltd\\.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=BILL TO.*\n)[\w\s]+Ltd\." RegexOption="IgnoreCase, Compiled" Result="[clientName]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=GSTIN:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}" DisplayName="Client GST" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_36" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=GSTIN:\\s*)\\d{2}[A-Z]{5}\\d{4}[A-Z]\\d[A-Z]{2}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=GSTIN:\s*)\d{2}[A-Z]{5}\d{4}[A-Z]\d[A-Z]{2}" RegexOption="IgnoreCase, Compiled" Result="[clientGST]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Invoice Date\s+\d{1,2}\s+\w+\s+\d{4}\s)([\s\S]*?)(?=\s+Due Date\s+\d{1,2}\s+\w+\s+\d{4})" DisplayName="Client Address" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_37" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Invoice Date\\s+\\d{1,2}\\s+\\w+\\s+\\d{4}\\s)([\\s\\S]*?)(?=\\s+Due Date\\s+\\d{1,2}\\s+\\w+\\s+\\d{4})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Invoice Date\s+\d{1,2}\s+\w+\s+\d{4}\s)([\s\S]*?)(?=\s+Due Date\s+\d{1,2}\s+\w+\s+\d{4})" RegexOption="IgnoreCase, Compiled" Result="[clientAddr]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Sub Total\s*n)[\d,]+" DisplayName="Sub Total" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_38" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Sub Total\\s*n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Sub Total\s*n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[subTotal]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=CGST @ 9%\s*n)[\d,]+" DisplayName="CGST" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_39" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=CGST @ 9%\\s*n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=CGST @ 9%\s*n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[cgstAmt]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=SGST @ 9%\s*n)[\d,]+" DisplayName="SGST" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_40" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=SGST @ 9%\\s*n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=SGST @ 9%\s*n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[sgstAmt]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Gross Total\s*n)[\d,]+" DisplayName="Gross Total" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_41" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Gross Total\\s*n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Gross Total\s*n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[grossTotal]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=TDS Deduction @ 2%\s*\(n)[\d,]+" DisplayName="TDS" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_42" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=TDS Deduction @ 2%\\s*\\(n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=TDS Deduction @ 2%\s*\(n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[tdsAmt]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=NET PAYABLE\s*n)[\d,]+" DisplayName="Net Payable" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_43" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=NET PAYABLE\\s*n)[\\d,]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=NET PAYABLE\s*n)[\d,]+" RegexOption="IgnoreCase, Compiled" Result="[netPayable]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="\bPAID\b" DisplayName="Payment Status" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_44" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\bPAID\\b&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\bPAID\b" RegexOption="IgnoreCase, Compiled" Result="[strPayStatus]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Bank:\s*).+?(?=\s*\|)" DisplayName="Bank Name" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_45" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Bank:\\s*).+?(?=\\s*\\|)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Bank:\s*).+?(?=\s*\|)" RegexOption="IgnoreCase, Compiled" Result="[bankName]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=Account No\.:\s*)\d+" DisplayName="Account Number" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_46" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=Account No\\.:\\s*)\\d+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=Account No\.:\s*)\d+" RegexOption="IgnoreCase, Compiled" Result="[accNo]" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=IFSC:\s*)[A-Z0-9]+" DisplayName=" IFSC Code" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_47" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=IFSC:\\s*)[A-Z0-9]+&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=IFSC:\s*)[A-Z0-9]+" RegexOption="IgnoreCase, Compiled" Result="[ifscCode]" />
+          <ui:BuildDataTable DataTable="[dtHeader]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Field&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Extracted_x0020_Value&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Invoice Number&quot;, invNo(0).ToString}]" DataTable="[dtHeader]" DisplayName="Add Invoice Number" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_24" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Invoice Date&quot;, invDate(0).ToString}]" DataTable="[dtHeader]" DisplayName="Add Invoice Date" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_25" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Due Date&quot;, dueDate(0).ToString}]" DataTable="[dtHeader]" DisplayName=" Due Date" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_26" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;PO Reference&quot;, poRef(0).ToString}]" DataTable="[dtHeader]" DisplayName="PO Reference" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_27" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Payment Terms&quot;, payTerms(0).ToString}]" DataTable="[dtHeader]" DisplayName="Payment Terms" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_28" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Currency&quot;, currency(0).ToString}]" DataTable="[dtHeader]" DisplayName="Currency" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_29" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Vendor Name&quot;, vendorName(0).ToString.Trim().Replace(vbCr,&quot;&quot;).Replace(vbLf,&quot; &quot;).Replace(&quot;  &quot;,&quot; &quot;)}]" DataTable="[dtHeader]" DisplayName="Vendor Name" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_30" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Vendor GST&quot;, vendorGST(0).ToString}]" DataTable="[dtHeader]" DisplayName="Vendor GST" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_31" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Vendor Address&quot;, If(vendorAddr IsNot Nothing AndAlso vendorAddr.Count &gt; 0, System.Text.RegularExpressions.Regex.Replace(vendorAddr(0).Value, &quot;\s+&quot;, &quot; &quot;).Trim, &quot;No Match Found&quot;)}]" DataTable="[dtHeader]" DisplayName="Vendor Address" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_32" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Client Name&quot;, clientName(0).ToString.Trim()}]" DataTable="[dtHeader]" DisplayName="Client Name" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_33" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Client GST&quot;, clientGST(0).ToString}]" DataTable="[dtHeader]" DisplayName=" Client GST" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_34" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Client Address&quot;, If(clientAddr IsNot Nothing AndAlso clientAddr.Count &gt; 0, System.Text.RegularExpressions.Regex.Replace(clientAddr(0).Value, &quot;\s+&quot;, &quot; &quot;).Trim, &quot;No Match Found&quot;)}]" DataTable="[dtHeader]" DisplayName="Client Address" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_35" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Sub Total (INR)&quot;, subTotal(0).ToString}]" DataTable="[dtHeader]" DisplayName="Sub Total" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_36" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;CGST @ 9% (INR)&quot;, cgstAmt(0).ToString}]" DataTable="[dtHeader]" DisplayName="CGST" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_37" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;SGST @ 9% (INR)&quot;, sgstAmt(0).ToString}]" DataTable="[dtHeader]" DisplayName=" SGST" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_38" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Gross Total (INR)&quot;, grossTotal(0).ToString}]" DataTable="[dtHeader]" DisplayName="Gross Total" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_39" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;TDS @ 2% (INR)&quot;, tdsAmt(0).ToString}]" DataTable="[dtHeader]" DisplayName=" TDS" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_40" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Net Payable (INR)&quot;, netPayable(0).ToString}]" DataTable="[dtHeader]" DisplayName="Net Payable" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_41" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Payment Status&quot;, If(strPayStatus.Any(), &quot;PAID&quot;, &quot;UNPAID&quot;)}]" DataTable="[dtHeader]" DisplayName="Payment Status" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_42" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Bank Name&quot;, bankName(0).ToString}]" DataTable="[dtHeader]" DisplayName="Bank Name" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_43" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Account Number&quot;, accNo(0).ToString}]" DataTable="[dtHeader]" DisplayName="Account Number" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_44" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;IFSC Code&quot;, ifscCode(0).ToString}]" DataTable="[dtHeader]" DisplayName="IFSC Code" sap:VirtualizedContainerService.HintSize="502,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_45" />
+          <ui:BuildDataTable DataTable="[dtLineItems]" DisplayName="Build Line Items Table" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;_x0023_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SAC_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rate_x0020__x0028_INR_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Amount_x0020__x0028_INR_x0029_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;GST_x0020__x0025_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+          <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(\d)\s+(.+?)\s+(9983\d{2})\s+(\d+)\s+([\d,]+)\s+([\d,]+)\s+(\d+%)" DisplayName="Extract Line Items" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_48" Input="[pdfText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\d)\\s+(.+?)\\s+(9983\\d{2})\\s+(\\d+)\\s+([\\d,]+)\\s+([\\d,]+)\\s+(\\d+%)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d)\s+(.+?)\s+(9983\d{2})\s+(\d+)\s+([\d,]+)\s+([\d,]+)\s+(\d+%)" RegexOption="IgnoreCase, Compiled" Result="[lineItems]" />
+          <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each currentMatch" sap:VirtualizedContainerService.HintSize="502,406" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[lineItems]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="str:Match">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="str:Match" Name="currentMatch" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,274" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{currentMatch.Groups(1).Value, currentMatch.Groups(2).Value.Trim, currentMatch.Groups(3).Value, currentMatch.Groups(4).Value, currentMatch.Groups(5).Value, currentMatch.Groups(6).Value, currentMatch.Groups(7).Value}]" DataTable="[dtLineItems]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,214" sap2010:WorkflowViewState.IdRef="AddDataRow_46" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+          <ui:WriteRange AddHeaders="False" DataTable="[dtHeader]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="502,148" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="Invoice Header" StartingCell="A1" WorkbookPath="invoice_extraction_output.xlsx" />
+          <ui:WriteRange AddHeaders="False" DataTable="[dtLineItems]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="502,148" sap2010:WorkflowViewState.IdRef="WriteRange_8" SheetName="Line Items" StartingCell="A1" WorkbookPath="invoice_extraction_output.xlsx" />
+          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,702.6666666666666" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="invoice_extraction_output.xlsx">
+            <ueab:ExcelApplicationCard.Body>
+              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,390" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:InvokeVBAX Result="{x:Null}" CodeFilePath="format_invoice.vbs" DisplayName="Invoke VBA" EntryMethodName="FormatInvoice" sap:VirtualizedContainerService.HintSize="434,330" sap2010:WorkflowViewState.IdRef="InvokeVBAX_2" Workbook="[Excel]">
+                    <ueab:InvokeVBAX.Body>
+                      <ActivityAction>
+                        <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:InvokeVBAX.Body>
+                  </ueab:InvokeVBAX>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelApplicationCard.Body>
+          </ueab:ExcelApplicationCard>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Excel file generated!&quot;]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;===== Invoice Extraction Bot Completed Successfully =====&quot;]" />
+          <ui:WriteTextFile FileName="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" File="[LocalResource.FromPath(&quot;InvoiceBot_Log.txt&quot;)]" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_4" Text="[&quot;===== Invoice Extraction Bot Log =====&quot; + vbCrLf + &quot;Timestamp: &quot; + Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;) + vbCrLf + &quot;Input File: sample_invoice.pdf&quot; + vbCrLf + &quot;Output File: invoice_extraction_output.xlsx&quot; + vbCrLf + vbCrLf + &quot;--- Extracted Data ---&quot; + vbCrLf + &quot;Invoice No: &quot; + invNo(0).ToString + vbCrLf + &quot;Invoice Date: &quot; + invDate(0).ToString + vbCrLf + &quot;Due Date: &quot; + dueDate(0).ToString + vbCrLf + &quot;Client: &quot; + clientName(0).ToString.Trim + vbCrLf + &quot;Net Payable: &quot; + netPayable(0).ToString + vbCrLf + &quot;Payment Status: &quot; + strPayStatus(0).ToString + vbCrLf + &quot;Header Rows: &quot; + dtHeader.Rows.Count.ToString + vbCrLf + &quot;Line Items: &quot; + dtLineItems.Rows.Count.ToString + vbCrLf + vbCrLf + &quot;Status: COMPLETED SUCCESSFULLY&quot;]" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="502,114.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Invoice &quot; + invNo(0).ToString + &quot; extracted successfully!&quot;]" />
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,528" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;ERROR: &quot; + exception.Message]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="502,124" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Bot Error: &quot; + exception.Message]" />
+              <ui:WriteTextFile FileName="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" File="[LocalResource.FromPath(&quot;ErrorLog.txt&quot;)]" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[&quot;Error at: &quot; + Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;) + vbCrLf + &quot;Message: &quot; + exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="536,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteTextFile FileName="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" File="[LocalResource.FromPath(&quot;InvoiceBot_Log.txt&quot;)]" sap:VirtualizedContainerService.HintSize="502,167.33333333333334" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[&quot;Execution completed at: &quot; + Now.ToString(&quot;dd-MM-yyyy HH:mm:ss&quot;)]" />
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

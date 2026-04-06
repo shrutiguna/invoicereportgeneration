@@ -1,0 +1,57 @@
+TechNova Solutions
+Pvt. Ltd. INVOICE
+
+Software & IT Services | GST: 33AABCT1332L1ZX | CIN:
+U72900TN2018PTC123456
+#42, Anna Salai, Chennai – 600002, Tamil
+Nadu, India
+
+BILL TO Invoice No. INV-2024-0087
+Infosys Technologies Ltd. Invoice Date 15 March 2024
+Electronics City, Phase 1
+Bengaluru – 560100, Karnataka Due Date 14 April 2024
+GSTIN: 29AAACI1681G1ZX PO Reference PO-INF-7821
+Contact: Priya Sharma | priya.sharma@infosys.com Payment Terms Net 30 Days
+Currency INR (Indian Rupee)
+
+# Description SAC Qty Rate (n) Amount (n) GST %
+Code
+
+1 Custom ERP Module Development (Phase 2 998314 1 1,80,000 1,80,000 18%
+– Purchase & Inventory)
+
+2 Mobile App Development (Android + iOS) 998315 1 2,40,000 2,40,000 18%
+React Native, 3 sprints
+
+3 Cloud Infrastructure Setup & Config AWS 998316 1 75,000 75,000 18%
+EC2, RDS, S3, CloudFront
+
+4 Annual Software Maintenance Contract 998313 1 60,000 60,000 18%
+Post-go-live support (12 mo)
+
+5 UI/UX Design Services Figma prototypes, 8 998311 8 8,500 68,000 18%
+screens
+
+6 Technical Documentation & Training 2-day 998312 2 12,500 25,000 18%
+onsite workshop
+
+Sub Total n6,48,000
+CGST @ 9% n58,320
+SGST @ 9% n58,320
+Gross Total n7,64,640
+TDS Deduction @ 2% (n15,293)
+
+NET PAYABLE n7,49,347
+
+3 PAID
+PAYMENT DETAILS
+Bank: HDFC Bank Ltd. | Account Name: TechNova Solutions Pvt. Ltd.
+Account No.: 50200012345678 | IFSC: HDFC0001234 | Branch: Anna Salai, Chennai
+UPI ID: technova@hdfcbank | SWIFT (for international): HDFCINBB
+
+NOTES & TERMS1. Please quote Invoice No. INV-2024-0087 in all payment correspondence.
+2. Late payments are subject to 1.5% interest per month after the due date.
+3. This is a computer-generated invoice and does not require a physical signature.
+4. Disputes, if any, must be raised within 7 days of receipt of this invoice.
+
+TechNova Solutions Pvt. Ltd. | 42 Anna Salai, Chennai – 600002 | info@technova.in | +91-44-4567-8900 | www.technova.in
